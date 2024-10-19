@@ -1,5 +1,11 @@
 <template>
-  <div class="pt-16 h-screen bg-gray-300">
-<h1>Home</h1>
+  <div class="flex flex-row max-lg:flex-col max-md:justify-center max-md:items-center">
+    <LeftHero />
+    <right-hero/>
   </div>
 </template>
+<script setup>
+import LeftHero from '@/components/LeftHero.vue';
+import RightHero from '@/components/RightHero.vue';
+
+</script>
