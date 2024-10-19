@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen flex items-center justify-center  w-1/2 mt-7 -z-20">
-    <div ref="circleContainer" class="relative w-[600px] h-[600px]">
+  <div class="h-screen flex items-center justify-center  w-1/2 mt-7 -z-20 ">
+    <div ref="circleContainer" class="relative w-[600px] h-[600px]    ">
       <img 
         v-for="(icon, index) in icons" 
         :key="index" 
@@ -52,7 +52,7 @@ const circleContainer = ref(null);
 onMounted(() => {
   const iconElements = circleContainer.value.children;
   const totalIcons = iconElements.length;
-  const radius = 240; // Rayon du cercle
+  const radius = 270; // Rayon du cercle
 
   // Positionnement des icônes en cercle
   Array.from(iconElements).forEach((icon, index) => {

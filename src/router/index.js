@@ -5,10 +5,15 @@ const routes=[
     path:'/',
     name:'Home',
     component:Home
-  },{
+  },
+  {
     path:'/about',
     name:'About',
     component:()=>import('../views/About.vue')
+  },{
+    path:'/skills',
+    name:'Skills',
+    component:()=>import('@/views/Skills.vue')
   }
 ]
 

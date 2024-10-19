@@ -15,6 +15,7 @@
 import Header from '@/components/Header.vue'
 import Footer from '@/views/Footer.vue'
 </script>
+
 <style>
  body{
   font-family: "Roboto", sans-serif;
@@ -23,4 +24,3 @@ import Footer from '@/views/Footer.vue'
 }
 
 </style>
-

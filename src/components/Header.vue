@@ -1,11 +1,12 @@
 <template>
-  <div class="shadow-lg fixed w-full bg-white">
+  <div class="shadow-lg fixed w-full bg-white z-50">
     <div class="relative">
       <font-awesome-icon
       :icon="['fas', 'bars']"
       class="sm:invisible absolute top-10 right-6 text-xl cursor-pointer"
       @click="showNavBar"
     />
+  
     <div class="flex justify-between mx-6 max-md:flex-col items-center">
       <router-link to="/">
         <div class="flex gap-3 items-center py-2">
@@ -45,7 +46,7 @@
       <transition name="navBar" appear @before-enter="beforeEnter" @enter="enter" @leave="leave">
         <nav
           v-if="navBar"
-          class="flex items-center py-2 sm:invisible"
+          class="flex items-center py-2 sm:invisible z-50"
           id="navbar"
         >
           <ul class="flex flex-col gap-4 text-slate-600">
@@ -68,6 +69,7 @@
 </template>
 
 <script setup>
+
 import { ref, onMounted } from 'vue';
 import gsap from 'gsap';
 
@@ -82,7 +84,7 @@ const showNavBar = () => {
 
 const nav = [
   { name: 'Home', path: '/', icon: 'house' },
-  { name: 'Skills', path: '/', icon: 'laptop-code' },
+  { name: 'Skills', path: '/skills', icon: 'laptop-code' },
   { name: 'About', path: '/about', icon: 'user' },
   { name: 'Project', path: '/', icon: 'project-diagram' },
 ];
