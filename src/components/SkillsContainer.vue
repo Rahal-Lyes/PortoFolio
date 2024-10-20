@@ -22,17 +22,20 @@ const props = defineProps({
     type: Array,
     required: true,
   },
+  time: {
+    type: Number,
+    required: true,
+  },
 });
 
 // Références des éléments
 const skill = ref([]);
-
 // Animation GSAP : Rotation infinie sur l'axe X
 onMounted(() => {
   skill.value.forEach((el) => {
     gsap.to(el, {
       x: 360,  // Rotation complète sur l'axe X
-      duration: 5,     // Durée de la rotation en secondes
+      duration: props.time,     // Durée de la rotation en secondes
       repeat: -1,      // Répétition infinie
       ease: "linear",
       yoyo: true,      // Activer l'effet yoyo
