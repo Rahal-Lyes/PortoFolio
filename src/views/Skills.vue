@@ -1,19 +1,19 @@
 <template>
-  <div class="pt-20">
-    <h1 class="text-2xl text-blue-950 text-center my-2 py-2">Front-end</h1>
+  <div class="pt-20 max-md:pt-40">
+    <h1 class="text-2xl text-blue-950 text-center my-2 py-2 ">Front-end</h1>
     <Container class="flex flex-row gap-3">
-      <SkillsContainer :time="5" :skills="frontEnd"   ref="skill" />
+      <SkillsContainer :time="20" :skills="frontEnd"   ref="skill" />
     </Container>
 
     <h1 class="text-2xl text-blue-950 text-center my-2 py-2">Back-end</h1>
     <Container class="flex flex-row gap-3">
-      <SkillsContainer :time="5" :skills="backend" />
+      <SkillsContainer :time="20" :skills="backend" />
     </Container>
 
 
     <h1 class="text-2xl text-blue-950 text-center my-2 py-2">Other</h1>
     <Container class="flex flex-row gap-3">
-      <SkillsContainer :time="5" :skills="other" />
+      <SkillsContainer :time="20" :skills="other" />
     </Container>
   </div>
 </template>
@@ -44,7 +44,7 @@ import tailwindcss from '@/assets/social-links/programming/tailwindcss.svg';
 import vscode from '@/assets/social-links/programming/vscode.svg';
 import vue from '@/assets/social-links/programming/vue.svg';
 import express from '@/assets/social-links/programming/Express.js_light.svg';
-
+import gsap from '@/assets/social-links/programming/gsap.svg';
 const frontEnd = ref([
   { name: 'HTML5', icon: html5 },
   { name: 'CSS3', icon: css },
@@ -53,6 +53,7 @@ const frontEnd = ref([
   {name:'vuetify',icon:vuetify},
   {name:'JavaScript',icon:javascript},
   {name:'jquery',icon:jquery},
+  {name:'gsap',icon:gsap}
 
 
 ]);

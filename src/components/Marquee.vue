@@ -4,7 +4,7 @@
     <h1 class="text-4xl font-bold text-center mt-10 p-5">Skills</h1>
   
     <div class="flex flex-row items-center justify-center gap-3 w-11/12 rounded-2xl text-center overflow-hidden">
-      <SkillsContainer :time="5" :skills="skills" />
+      <SkillsContainer :time="30" :skills="skills" />
     </div>
 
   

@@ -33,14 +33,26 @@ const skill = ref([]);
 // Animation GSAP : Rotation infinie sur l'axe X
 onMounted(() => {
   skill.value.forEach((el) => {
-    gsap.to(el, {
-      x: 360,  // Rotation complète sur l'axe X
+    gsap.from(el, {
+      x: 1900,  // Rotation complète sur l'axe X
       duration: props.time,     // Durée de la rotation en secondes
       repeat: -1,      // Répétition infinie
-      ease: "linear",
+      ease: "ease-in-out",
       yoyo: true,      // Activer l'effet yoyo
      stagger: 0.2,    // Décaler chaque élément de 200ms
     });
+    
+    gsap.to(el, {
+      x: -1900,  // Rotation complète sur l'axe X
+      duration: props.time,     // Durée de la rotation en secondes
+      repeat: -1,      // Répétition infinie
+      ease: "linear",
+      yoyo: false,      // Activer l'effet yoyo
+     stagger: 0.2,    // Décaler chaque élément de 200ms
+    });
   });
+
+
+
 });
 </script>

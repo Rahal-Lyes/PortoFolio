@@ -33,18 +33,18 @@ import phpstorm from '@/assets/social-links/programming/phpstorm.svg';
 import pinia from '@/assets/social-links/programming/pinia.svg';
 import postman from '@/assets/social-links/programming/postman.svg';
 import sqlite from '@/assets/social-links/programming/sqlite.svg';
-import supabase from '@/assets/social-links/programming/Supabase_wordmark_light.svg';
+
 import tailwindcss from '@/assets/social-links/programming/tailwindcss.svg';
 import vscode from '@/assets/social-links/programming/vscode.svg';
 import vue from '@/assets/social-links/programming/vue.svg';
 import express from '@/assets/social-links/programming/Express.js_light.svg';
-import wordpress from '@/assets/social-links/programming/wordpress.svg';
+
 
 // Liste des images
 const icons = [
   html5, css, javascript, jquery, c, git, intellijidea, jwt, mongodb, mysql,
-  nodejs, npm, php, phpstorm, pinia, postman, sqlite, supabase, tailwindcss,
-  vscode, vue, express, wordpress
+  nodejs, npm, php, phpstorm, pinia, postman, sqlite, tailwindcss,
+  vscode, vue, express,
 ];
 
 const circleContainer = ref(null);

@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as o,o as a}from"./index-CbG4SeKZ.js";const c={},n={class:"h-screen bg-slate-300"};function r(_,e){return a(),t("div",n,e[0]||(e[0]=[o("h1",null,"about",-1)]))}const d=s(c,[["render",r]]);export{d as default};

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20 h-screen w-1/2 overflow-hidden">
+  <div class="pt-20  w-1/2 overflow-hidden min-w-80 ">
     <div class="bg-sky-200 p-4 m-4 rounded-2xl min-w-80">
       <transition name="fade" appear>
         <h1 class="text-4xl text-blue-950 p-3" ref="title">

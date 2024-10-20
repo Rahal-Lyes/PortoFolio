@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-lg fixed w-full bg-white z-50">
+  <div class="shadow-lg fixed w-screen bg-gray-900 text-white  z-50">
     <div class="relative">
       <font-awesome-icon
       :icon="['fas', 'bars']"
