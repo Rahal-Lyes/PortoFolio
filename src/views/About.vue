@@ -66,6 +66,16 @@
                 linkedin.com/in/rahal-lyes
               </a>
             </li>
+              <li class="flex items-center gap-3">
+              <i class="fab fa-linkedin text-cyan-400"></i>
+              <a
+                
+              href="https://github.com/Rahal-Lyes/PortoFolio.git"
+              class="project-link mx-2"
+              >github Portofolio</a
+            >
+            </li>
+              
           </ul>
         </div>
       </div>
