@@ -2,9 +2,9 @@
   <div class="fixed w-full bg-gradient-to-r from-slate-900/95 via-gray-900/95 to-slate-900/95 backdrop-blur-xl text-white z-50 border-b border-gray-700/50 shadow-2xl">
     <div class="relative">
       <!-- Mobile Menu Button -->
-      <div class="sm:hidden absolute top-5 right-5 z-60">
+      <div class="sm:hidden absolute top-5 right-5  z-[9999]">
         <button
-          @click="showNavBar"
+         @click="showNavBar"
           class="relative p-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400 shadow-lg hover:shadow-cyan-500/25"
           :class="{ 'rotate-90': navBar }"
         >
@@ -196,13 +196,15 @@ import gsap from 'gsap';
 const navBar = ref(false);
 
 const showNavBar = () => {
+ console.log("hello");
   navBar.value = !navBar.value;
   if (navBar.value) {
     setTimeout(() => {
       navBar.value = false;
-    }, 12000);
+    }, 10000);
   }
 };
+
 
 const nav = [
   { name: 'Home', path: '/', icon: 'house' },
@@ -217,6 +219,38 @@ const beforeEnter = (el) => {
   gsap.set('.mobile-nav-item', { x: -80, opacity: 0, scale: 0.8 });
 };
 
+const enter = (el, done) => {
+  gsap.to(el, {
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 0.5,
+    ease: "power2.out",
+    onComplete: done
+  });
+
+  gsap.to('.mobile-nav-item', {
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 0.5,
+    stagger: 0.1,
+    ease: "power2.out"
+  });
+};
+
+const leave = (el, done) => {
+  gsap.to(el, {
+    x: -320,
+    opacity: 0,
+    scale: 0.9,
+    duration: 0.4,
+    ease: "power2.in",
+    onComplete: done
+  });
+};
+
+
 
  
 
@@ -224,24 +258,7 @@ const beforeEnter = (el) => {
 
 <style scoped>
 /* Enhanced transitions */
-.navBar-enter-active,
-.navBar-leave-active {
-  transition: none;
-}
 
-.overlay-enter-active,
-.overlay-leave-active {
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.overlay-enter-from,
-.overlay-leave-to {
-  opacity: 0;
-}
-
-/* Custom gradient border effect */
-.border-gradient-to-r {
-  border-image: linear-gradient(to right, #22d3ee, #3b82f6) 1;
-}
 
 /* Enhanced scrollbar */
 #navbar {
