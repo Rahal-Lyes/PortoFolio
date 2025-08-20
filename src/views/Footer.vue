@@ -184,7 +184,10 @@
       class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full shadow-xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-110 z-50 group"
       :class="{ 'opacity-0 pointer-events-none': !showBackToTop }"
     >
-      <i class="fas fa-arrow-up group-hover:-translate-y-1 transition-transform duration-300"></i>
+       <font-awesome-icon
+    :icon="['fas', 'arrow-up']"
+    class="group-hover:-translate-y-1 transition-transform duration-300"
+  />
     </button>
   </footer>
 </template>
