@@ -5,7 +5,7 @@
     <RightHero class="max-lg:hidden"/> 
   
   </div>
-  <Marquee class="lg:hidden"/>
+  <!-- <Marquee class="lg:hidden"/> -->
   </Container>
 </template>
 
