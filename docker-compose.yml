@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  portfolio:
+    container_name: portfolio_container
+    build: .
+    image: portfolio_img
+    ports:
+      - "3000:5173"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=development
