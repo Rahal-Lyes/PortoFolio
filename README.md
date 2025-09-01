@@ -20,7 +20,7 @@ Welcome to my GitHub profile! I'm a passionate full-stack web developer with a M
 - Responsive Design
 
 **Backend:**
-- PHP, Python
+- Nodejs, Python
 - Django REST Framework
 - Express.js
 - RESTful APIs
