@@ -7,7 +7,7 @@
   </div>
   <!-- <Marquee class="lg:hidden"/> -->
   </Container>
-</template>
+</template> 
 
 <script setup>
 import { ref} from 'vue';

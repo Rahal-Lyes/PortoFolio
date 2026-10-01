@@ -28,7 +28,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         
         <!-- Brand Section -->
-        <div class="lg:col-span-2" ref="brandSection">
+        <div class="lg:col-span-2 mt-16" ref="brandSection">
           <div class="flex items-center gap-4 mb-6">
             <div class="relative">
               <div class="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 blur-md opacity-50"></div>

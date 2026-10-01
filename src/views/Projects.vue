@@ -33,11 +33,10 @@
             </div>
             <a
               href="https://github.com/Rahal-Lyes/plateforme-partage-de-sang.git"
-              class="project-link"
+              class="px-3 py-1 rounded-full border border-gray-300 text-sm text-gray-700 hover:bg-gray-100 transition"
               target="_blank"
-              rel="noopener noreferrer"
             >
-              View Project →
+              💻 Source Code
             </a>
           </div>
         </div>
@@ -62,7 +61,7 @@
               <span class="tech-tag">TailwindCSS</span>
               <span class="tech-tag">JavaScript</span>
             </div>
-            <a href="#" class="project-link">View Project →</a>
+            <!-- <a href="#" class="project-link">View Project →</a> -->
           </div>
         </div>
 
@@ -88,9 +87,11 @@
             </div>
             <a
               href="https://github.com/Rahal-Lyes/Dr-Rahal-Mohamed.git"
-              class="project-link"
-              >View Project →</a
+              class="px-3 py-1 rounded-full border border-gray-300 text-sm text-gray-700 hover:bg-gray-100 transition"
+              target="_blank"
             >
+              💻 Source Code
+            </a>
           </div>
         </div>
         <div class="project-card" ref="projectCard2">
@@ -102,44 +103,127 @@
             />
           </div>
           <div class="project-content">
-            <h3> Appointment Platform</h3>
+            <h3>CMS</h3>
             <div class="project-date">July 2025 - August 2025</div>
             <p class="project-description">
-              A web platform that allows patients to easily book medical consultations online, 
-      while doctors can efficiently manage their schedules.  
-      Built with <span class="text-cyan-400 font-medium">FullCalendar</span> to handle 
-      scheduling, and powered by <span class="text-blue-400 font-medium">Django REST Framework</span> 
-      with serializers and filtering for robust backend data management.
+              A modular <span class="text-cyan-400 font-medium">CMS</span> built
+              to explore
+              <span class="text-blue-400 font-medium">Vue.js</span> concepts and
+              practice with
+              <span class="text-cyan-400 font-medium">FullCalendar</span> for
+              scheduling. It includes multiple views, such as a doctor
+              appointment system and a shop, with a flexible structure that
+              makes adding new views simple and efficient.
             </p>
             <div class="project-tech">
-          <span class="tech-tag">Vue.js</span>
-      <span class="tech-tag">FullCalendar</span>
-      <span class="tech-tag">TailwindCSS</span>
-      <span class="tech-tag">Django</span>
-      <span class="tech-tag">DRF</span>
-          <span class="tech-tag">DRF</span>
-            <span class="tech-tag">Vuetify</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">FullCalendar</span>
+              <span class="tech-tag">TailwindCSS</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">DRF</span>
+              <span class="tech-tag">DRF</span>
+              <span class="tech-tag">Vuetify</span>
             </div>
-            <a
-              href="https://github.com/Rahal-Lyes/shareBlood-v2.git"
-              class="project-link mx-2"
-              >Frontend github</a
-            >
-                <a
-                
-              href="https://github.com/Rahal-Lyes/shareblood-backend.git"
-              class="project-link mx-2"
-              >Backend github</a
-            >
-                <a
-                
-              href="https://share-blood-v2-bhhm.vercel.app/"
-              class="project-link mx-1"
-              >En ligne</a
-            >
+            <h5 class="text-blue-600 font-bold">View Source Code</h5>
+            <div class="flex flex-row gap-3">
+              <a
+                href="https://github.com/Rahal-Lyes/shareBlood-v2.git"
+                class="px-3 py-1 rounded-full border border-gray-300 text-sm text-gray-700 hover:bg-gray-100 transition"
+                target="_blank"
+              >
+                🌐 Frontend
+              </a>
+              <a
+                href="https://github.com/Rahal-Lyes/shareblood-backend.git"
+                class="px-3 py-1 rounded-full border border-gray-300 text-sm text-gray-700 hover:bg-gray-100 transition"
+                target="_blank"
+              >
+                ⚙️ Backend
+              </a>
+              <a
+                href="https://share-blood-v2-bhhm.vercel.app/"
+                class="px-3 py-1 rounded-full border border-red-400 text-sm text-red-600 hover:bg-red-500 hover:text-white transition"
+                target="_blank"
+              >
+                🚀 Live Demo
+              </a>
+              <a
+                href="https://hub.docker.com/r/rahallyes/shareblood-frontend"
+                class="px-3 py-1 rounded-full border border-green-400 text-sm text-green-600 hover:bg-green-500 hover:text-white transition"
+                target="_blank"
+              >
+                Docker Image
+              </a>
+            </div>
           </div>
-          
         </div>
+
+        <!-- ********************************** -->
+        <div class="project-card" ref="projectCard2">
+          <div class="project-image">
+            <img
+              src="@/assets/images/portofolio.png"
+              alt="Portfolio Website built with Vue.js and TailwindCSS"
+              class="rounded-lg shadow-md w-full h-48 object-cover"
+            />
+          </div>
+
+          <div class="project-content">
+            <h3 class="text-xl font-semibold text-gray-800">
+              Portfolio Website
+            </h3>
+            <div class="project-date text-sm text-gray-500">July 2024</div>
+
+            <p class="project-description mt-2 text-gray-700">
+              A personal
+              <span class="text-cyan-400 font-medium">portfolio website</span>
+              built with
+              <span class="text-blue-400 font-medium">Vue.js 3</span>, styled
+              using <span class="text-cyan-400 font-medium">TailwindCSS</span>,
+              and animated with
+              <span class="text-green-400 font-medium">GSAP</span>. It features
+              clean UI components, smooth page transitions with
+              <span class="text-blue-400 font-medium">Vue Router</span>, and
+              <span class="text-yellow-500 font-medium">FontAwesome</span> icons
+              for a modern and interactive presentation.
+            </p>
+
+            <div class="project-tech flex flex-wrap gap-2 mt-3">
+              <span class="tech-tag">Vue.js 3</span>
+              <span class="tech-tag">TailwindCSS</span>
+              <span class="tech-tag">GSAP</span>
+              <span class="tech-tag">Vue Router</span>
+              <span class="tech-tag">FontAwesome</span>
+            </div>
+
+            <h5 class="text-blue-600 font-bold mt-4">View Project</h5>
+            <div class="flex flex-row gap-3 mt-2">
+              <a
+                href="https://github.com/Rahal-Lyes/PortoFolio.git"
+                class="px-3 py-1 rounded-full border border-gray-300 text-sm text-gray-700 hover:bg-gray-100 transition"
+                target="_blank"
+              >
+                💻 Source Code
+              </a>
+              <a
+                href="https://your-portfolio-link.vercel.app/"
+                class="px-3 py-1 rounded-full border border-green-400 text-sm text-green-600 hover:bg-green-500 hover:text-white transition"
+                target="_blank"
+              >
+                🚀 Live Demo
+              </a>
+              <a
+                href="https://hub.docker.com/r/rahallyes/portofolio"
+                class="px-3 py-1 rounded-full border border-green-400 text-sm text-green-600 hover:bg-green-500 hover:text-white transition"
+                target="_blank"
+              >
+                Docker Image
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- **************************** -->
       </div>
     </section>
 
@@ -161,9 +245,11 @@
             <h3>Medical Appointment Management</h3>
             <div class="project-date">October 2024 - March 2025</div>
             <p class="project-description">
-             A comprehensive platform designed to streamline medical appointment management.  
-  Doctors can efficiently organize their schedules, while patients can easily book online consultations.  
-  The system also manages bed availability and staff assignments, ensuring smoother healthcare operations.
+              A comprehensive platform designed to streamline medical
+              appointment management. Doctors can efficiently organize their
+              schedules, while patients can easily book online consultations.
+              The system also manages bed availability and staff assignments,
+              ensuring smoother healthcare operations.
             </p>
             <div class="project-tech">
               <span class="tech-tag">Vue.js 3</span>
@@ -173,9 +259,6 @@
             </div>
           </div>
         </div>
-
-
-        
       </div>
     </section>
   </div>

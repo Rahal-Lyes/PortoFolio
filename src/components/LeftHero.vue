@@ -83,7 +83,7 @@
             class="flex flex-col sm:flex-row gap-4 mb-8 items-center justify-center sm:justify-start"
           >
             <a
-              href="../../public/cv.pdf"
+              href="../PortoFolio/public/cv.pdf"
               class="group flex items-center gap-3 text-xl bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white px-8 py-4 rounded-2xl hover:from-yellow-400 hover:via-orange-400 hover:to-yellow-500 hover:text-gray-900 transition-all duration-500 transform hover:scale-105 hover:rotate-1 shadow-xl hover:shadow-2xl font-semibold border-2 border-transparent hover:border-yellow-400"
             >
               <span>Download CV</span>
