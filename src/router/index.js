@@ -21,10 +21,15 @@ const routes = [
     name: "Projects",
     component: () => import("@/views/Projects.vue"),
   },
+  {
+    path: "/certificates",
+    name: "Certificates",
+    component: () => import("@/views/Certificates.vue"),
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 

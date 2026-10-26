@@ -211,6 +211,7 @@ const nav = [
   { name: 'Skills', path: '/skills', icon: 'laptop-code' },
   { name: 'About', path: '/about', icon: 'user' },
   { name: 'Projects', path: '/projects', icon: 'project-diagram' },
+  { name: 'Certificats', path: '/certificates', icon: 'certificate' },
 ];
 
 // Enhanced GSAP animations
